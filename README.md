@@ -4,6 +4,8 @@ This was a project I did to learn the basics of containers.  I would not recomme
 
 All of the Java stuff is lifted straight out of https://hub.docker.com/r/anapsix/alpine-java/~/dockerfile/ .
 
+#Docker Stuff
+
 To build:
 docker build -t continuumminecraft .
 
@@ -18,3 +20,8 @@ docker stop continuum
 
 To attach:
 docker attach continuum
+
+#Setup
+
+Use this guide to install Docker on AWS
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker
