@@ -29,3 +29,7 @@ Control-p Control-q
 
 Use this guide to install Docker on AWS
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker
+
+Make Docker Daemon start on server boot:
+sudo systemctl enable docker
+(disable to disable)
