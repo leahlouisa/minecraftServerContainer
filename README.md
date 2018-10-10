@@ -11,7 +11,7 @@ To build:
 docker build -t continuumminecraft .
 
 To run:
-docker run -d -p 25565:25565 --name continuum -it -v <location/on/your/filesystem>:/data continuumminecraft:latest
+docker run -i -t -p 25565:25565 --name continuum -it --restart unless-stopped -v <location/on/your/filesystem>:/data continuumminecraft:latest
 
 To start:
 docker start --interactive continuum
