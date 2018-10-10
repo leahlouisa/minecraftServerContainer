@@ -17,7 +17,7 @@ function download-newMinecraftServerRelease($urlOfLatestFileWebpage) {
 
     Expand-Archive -Path "/app/server.zip" -DestinationPath "/data/MCServer" -Force
     
-    Copy-Item -Path "/app/HTKTB.png" -DestinationPath "/data/MCServer/server-icon.png" -Force
+    Copy-Item -Path "/app/HTKTB.png" -Destination "/data/MCServer/server-icon.png" -Force
 }
 
 $baseUrl = "https://www.feed-the-beast.com"
