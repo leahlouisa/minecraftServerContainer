@@ -5,7 +5,7 @@ This was a project I did to learn the basics of containers.  I would not recomme
 All of the Java stuff is lifted straight out of https://hub.docker.com/r/anapsix/alpine-java/~/dockerfile/ .
 This was also helpful: https://medium.com/felixklauke/paperspigot-in-docker-containerized-minecraft-server-d34e35e3ee3c
 
-#Docker Stuff
+## Docker Stuff
 
 To build:
 docker build -t continuumminecraft .
@@ -25,7 +25,7 @@ docker attach continuum
 To escape from interactive mode:
 Control-p Control-q
 
-#Setup
+## Setup
 
 Use this guide to install Docker on AWS
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker
