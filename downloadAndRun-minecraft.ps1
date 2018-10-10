@@ -16,6 +16,8 @@ function download-newMinecraftServerRelease($urlOfLatestFileWebpage) {
     }
 
     Expand-Archive -Path "/app/server.zip" -DestinationPath "/data/MCServer" -Force
+    
+    Copy-Item -Path "/app/HTKTB.png" -DestinationPath "/data/MCServer/server-icon.png" -Force
 }
 
 $baseUrl = "https://www.feed-the-beast.com"
@@ -51,6 +53,8 @@ if($maxNum -gt $numAlreadyDownloaded) {
 if(!(test-path "/data/MCServer/eula.txt")) {
     "eula=true" | out-file -Path "/data/MCServer/eula.txt"
 }
+
+"export MAX_RAM=`"6048M`"" | out-file -Path "/data/MCServer/settings-local.sh" -Force
 
 invoke-expression -command "chmod +x /data/MCServer/ServerStart.sh"
 invoke-expression -command "sh /data/MCServer/ServerStart.sh"
