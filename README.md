@@ -35,4 +35,4 @@ sudo systemctl enable docker
 (disable to disable)
 
 SSH into AWS host:
-ssh -l ec2-user -i <locationOfYourPem.pem> <serverIPAddr>
+ssh -l ec2-user -i <locationOfYourPem.pem> serverIPAddr
