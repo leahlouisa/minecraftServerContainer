@@ -33,3 +33,6 @@ https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#i
 Make Docker Daemon start on server boot:
 sudo systemctl enable docker
 (disable to disable)
+
+SSH into AWS host:
+ssh -l ec2-user -i <locationOfYourPem.pem> <serverIPAddr>
