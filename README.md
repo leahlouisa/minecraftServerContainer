@@ -22,6 +22,9 @@ docker stop continuum
 To attach:
 docker attach continuum
 
+To escape from interactive mode:
+Control-p Control-q
+
 #Setup
 
 Use this guide to install Docker on AWS
