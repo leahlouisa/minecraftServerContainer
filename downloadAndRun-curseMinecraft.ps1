@@ -4,7 +4,8 @@ function download-newMinecraftServerRelease($currentVersion) {
   }
   $nextVersion = [int]$currentVersion + 1
   $errorCountBeforeDownloadAttempt = $error.count
-  invoke-webrequest "https://media.forgecdn.net/files/2948/426/RAD-Serverpack-1.$($nextVersion.zip)" -OutFile "/app/server.zip"
+  #invoke-webrequest "https://media.forgecdn.net/files/2948/426/RAD-Serverpack-1.$($nextVersion.zip)" -OutFile "/app/server.zip"
+  curl -o "/app/server.zip" "https://media.forgecdn.net/files/2948/426/RAD-Serverpack-1.$($nextVersion.zip)"
   if($error.count -eq $errorCountBeforeDownloadAttempt) {
     if(!(test-path "/data/MCServer")) {
         New-Item -Path "/data/MCServer" -ItemType Directory
